@@ -19,5 +19,6 @@ class Circle:
         plt.gca().add_patch(circle)
         plt.axis("scaled")
         plt.show()
-
+    def __str__(self) -> str:
+        return f"Circle with center at ({self.center.x},{self.center.y}) and radius {self.r}"
     
