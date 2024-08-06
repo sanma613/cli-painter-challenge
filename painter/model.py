@@ -53,4 +53,9 @@ class Rectangle:
         area = x_side * y_side
         return area
     
-    
+    def draw(self) -> None:
+        x = [self.point_1.x, self.point_2.x, self.point_2.x, self.point_1.x, self.point_1.x]
+        y = [self.point_1.y, self.point_1.y, self.point_2.y, self.point_2.y, self.point_1.y]
+        plt.fill(x, y, color='g')
+        plt.axis("scaled")
+        plt.show()
