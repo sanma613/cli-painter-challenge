@@ -21,4 +21,10 @@ class Circle:
         plt.show()
     def __str__(self) -> str:
         return f"Circle with center at ({self.center.x},{self.center.y}) and radius {self.r}"
+
+class Triangule:
+    def __init__(self, point_1:Point, point_2:Point, point_3:Point):
+        self.point_1=point_1
+        self.point_2=point_2
+        self.point_3=point_3
     
