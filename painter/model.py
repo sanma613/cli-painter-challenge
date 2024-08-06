@@ -47,4 +47,10 @@ class Rectangle:
         self.point_1=point_1
         self.point_2=point_2
     
+    def area(self) -> float:
+        x_side = abs(self.point_2.x - self.point_1.x)
+        y_side = abs(self.point_2.y - self.point_1.y)
+        area = x_side * y_side
+        return area
+    
     
