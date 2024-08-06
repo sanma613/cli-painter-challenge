@@ -28,3 +28,7 @@ class Triangule:
         self.point_2=point_2
         self.point_3=point_3
     
+    def area(self) -> float:
+        area = abs(self.point_1.x*(self.point_2.y - self.point_3.y) + self.point_2.x*(self.point_3.y - self.point_1.y) + self.point_3.x*(self.point_1.y - self.point_2.y)) / 2
+        return area
+    
